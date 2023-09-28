@@ -15,8 +15,6 @@ public class CompositeNumbersBetweenAB {
 
         scanner.close();
     }
-
-    // Function to check if a number is composite
     public static boolean isComposite(int n) {
         if (n <= 1) {
             return false;
@@ -29,13 +27,12 @@ public class CompositeNumbersBetweenAB {
         return false;
     }
 
-    // Function to print composite numbers between a and b
     public static void printCompositeNumbers(int a, int b) {
         for (int i = a; i <= b; i++) {
             if (isComposite(i)) {
                 System.out.print(i + " ");
             }
         }
-        System.out.println(); // Print a newline after the composite numbers
+        System.out.println(); 
     }
 }
